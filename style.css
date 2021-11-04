@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Zen+Antique+Soft&display=swap');
+
+body{
+    background-color: rgb(44, 41, 41); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    /* font-family: 'Parisienne', cursive; */
+    font-family: 'Zen Antique Soft', serif; 
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color:black;
+    color: white;
+
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 46px;
+    padding: 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+
+.container {
+    min-height: 75vh;
+    background-color: rgb(24, 22, 22);
+    color: gainsboro;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 15px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.bottom {
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+
+}
+
+.icons {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 70vw;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 50px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background: white;
+    /* width: 80%; */
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    border-radius: 50px;
+}
+
+.timestamp i{
+    margin: 0 10px 0 5px;
+    cursor: pointer;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 12px;
+    border-radius: 50px;
+}
+
+.timestamp{
+    margin: 0px 18px 0px 10px;
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 15vw;
+    font-family: 'Parisienne', cursive;
+
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
